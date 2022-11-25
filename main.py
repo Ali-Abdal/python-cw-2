@@ -4,7 +4,7 @@ my_name = input("Enter your name: ")
 my_age = input("Enter your age: ")
 
 print(f"My name is {my_name} and I am {my_age} years old")
-# part 2
+# part 2    
 
 number1 = input("Type the first number: ")
 
