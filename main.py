@@ -3,8 +3,8 @@
 my_name = input("Enter your name: ")
 my_age = input("Enter your age: ")
 
-print(f"My name is {my_name} and I am {my_age} years old")
-# part 2    
+print(f"My name is {my_name.title()} and I am {my_age} years old")
+# part 2
 
 number1 = input("Type the first number: ")
 
@@ -43,13 +43,8 @@ verb = input("Enter a verb: ")
 
 print(f"""
 The story goes...
-
 It was {random_number} o'clock when I heard a knock at the door.
-I opened the door and there was a box full of {plural_noun} with a note saying \"From {name}.\"
-Just as I closed the door I heard a scream \"{sentance}\"
+I opened the door and there was a box full of {plural_noun} with a note saying \"From {name.title()}.\"
+Just as I closed the door I heard a scream \"{sentance.upper()}\"
 I froze in place and all I could do was {verb}.
 """)
-
-
-
-
