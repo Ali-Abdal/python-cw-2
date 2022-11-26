@@ -50,3 +50,4 @@ I opened the door and there was a box full of {plural_noun} with a note saying \
 Just as I closed the door I heard a scream \"{sentance.upper()}\"
 I froze in place and all I could do was {verb}.
 """)
+
