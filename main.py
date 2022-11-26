@@ -4,25 +4,27 @@ my_name = input("Enter your name: ")
 my_age = input("Enter your age: ")
 
 print(f"My name is {my_name.title()} and I am {my_age} years old")
+
+
 # part 2
 
-number1 = input("Type the first number: ")
+number1 = input("Type the first number: ").strip()
 
-number2 = input("Type the secound number: ")
+number2 = input("Type the secound number: ").strip()
 
-operation = input("Type the operation type (+,-,*,/): ")
+operation = input("Type the operation type (+,-,*,/): ").strip()
 
-if operation == '+':
-    print("Total is: ",  (int(number1) + int(number2)))
+if operation.strip() == '+':
+    print(number1, " + ",number2, " = ",(int(number1) + int(number2)))
 
-elif operation == '-':
-    print("Total is: ",  (int(number1) - int(number2)))
+elif operation.strip() == '-':
+    print(number1, " - ",number2, " = ",(int(number1) - int(number2)))
 
-elif operation == '*':
-    print("Total is: ",  (int(number1) * int(number2)))
+elif operation.strip() == '*':
+    print(number1, " * ",number2, " = ",(int(number1) * int(number2)))
 
-elif operation == '/':
-    print("Total is: ", (int(number1) / int(number2)))
+elif operation.strip() == '/':
+    print(number1, " / ",number2, " = ",(int(number1) / int(number2)))
 
 else:
     print("the operation is not valid make sure to use (+,-,/,*)!")
