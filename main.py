@@ -8,11 +8,19 @@ print(f"My name is {my_name.title()} and I am {my_age} years old")
 
 # part 2
 
-number1 = input("Type the first number: ").strip()
+print("""
+Rules:
+1. only 2 numbers
+2. you should leave space between the operation and the numbers (a + b)
+""")
 
-number2 = input("Type the secound number: ").strip()
+message = input("Type the math question: ")
 
-operation = input("Type the operation type (+,-,*,/): ").strip()
+list = message.split()
+
+number1 = list[0]
+number2 = list[2]
+operation = list[1]
 
 if operation.strip() == '+':
     print(number1, " + ",number2, " = ",(int(number1) + int(number2)))
@@ -27,8 +35,9 @@ elif operation.strip() == '/':
     print(number1, " / ",number2, " = ",(int(number1) / int(number2)))
 
 else:
-    print("the operation is not valid make sure to use (+,-,/,*)!")
+    print("Invaild input !")
 
+    
 # part 3
 
 print("Mad libs where libs get mad.\nStart below:")
